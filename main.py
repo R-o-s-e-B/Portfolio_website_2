@@ -9,10 +9,10 @@ from wtforms.validators import DataRequired
 from flask_sqlalchemy import SQLAlchemy
 import secrets
 
-my_email = "Rosebobbyofficial@gmail.com"
-my_password = "hrwnspfzurticjwf"
-client_id = "377386935228-bqd9bppsar7d9m2t5ullg22uuk1s9mv9.apps.googleusercontent.com"
-client_secret = "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"
+my_email = "your_email"
+my_password = "your_password"
+client_id = "the_client_id"
+client_secret = "the_client_secret"
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_urlsafe(16)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///pages.db"
